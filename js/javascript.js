@@ -23,6 +23,7 @@ console.log(img[1]);
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const thumbs = document.querySelectorAll(".thumbs-itm")
+
 let i = 0;
 
 nextBtn.addEventListener("click", function (event) {
@@ -40,4 +41,41 @@ prevBtn.addEventListener("click", function (event) {
     i = 5
     console.log(img[i]);
     imgMain.setAttribute("src",img[i]) //petit soucis, arrivé au niveau 0
+})
+
+// const thumbsPic = document.querySelectorAll(".thumbs-img")
+// let dodo = 0
+
+// thumbs.addEventListener("mouseover", function(event) {
+//     // imgMain.setAttribute("src", img[3]).
+//     dodo++
+
+// console.log(dodo);
+
+// })
+const accordeon = document.getElementById("product-advantages")
+
+// function hidden() {
+//     this.style.display ="none";
+// }
+
+
+// function removeModal() {
+//     this.parentElement.parentElement.remove();
+//      }
+
+//      document.getElementById("product-advantages").addEventListener("click", function(event) {
+//         this.addEventListener("click", removeModal)
+//         this.addEventListener("click", removeModal)
+
+// })
+const productAd = document.getElementById("product-advantages")
+const productCar = document.getElementById("product-car")
+
+document.getElementById("accordeon").addEventListener("click", function (){
+    productAd.classList.toggle("active")
+})
+
+document.getElementById("accordeon2").addEventListener("click", function (){
+    productCar.classList.toggle("active")
 })
