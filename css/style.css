@@ -178,7 +178,7 @@ body {
     aspect-ratio: 1/1;
     font-size: 1.5rem;
 }
-.product-acrd-lnk.closed::after {
+.product-acrd-lnk.closed::before {
     content: "🔻";
 }
 
