@@ -9,7 +9,7 @@ addCart.addEventListener("click", function(event){
     if (cartNb.innerHTML >= 100)
     cartNb.innerHTML = "99+"
     addCart.innerHTML = "Déjà au panier"
-    document.getElementById("add-cta").removeEventListener("click",event);
+    document.getElementById("add-cta").removeEventListener("click",addCart); //Il veut pas
 });
 
 //DUCK MAIN
@@ -45,7 +45,6 @@ prevBtn.addEventListener("click", function (event) {
 
 // const thumbsPic = document.querySelectorAll(".thumbs-img")
 // thumbsPic.addEventListener("mouseover", () => {
-//     thumbsPic.classList.style.backgroundColor = "red";
 
 // onmouseover = imgMain.setAttribute("src",img[i])
 // })
@@ -56,11 +55,13 @@ prevBtn.addEventListener("click", function (event) {
 const accordeon = document.getElementById("product-advantages")
 const productAd = document.getElementById("product-advantages")
 const productCar = document.getElementById("product-car")
+const buttonRed = document.getElementsByClassName("product-acrd-lnk::after")
 
 document.getElementById("accordeon").addEventListener("click", function (){
     productAd.classList.toggle("active")
+    buttonRed.innerText = ("product-acrd-lnk::before")
 })
-
+//::after
 document.getElementById("accordeon2").addEventListener("click", function (){
     productCar.classList.toggle("active")
 })
@@ -68,16 +69,18 @@ document.getElementById("accordeon2").addEventListener("click", function (){
 
 //TryingLocalStorage
 
-// const active = ""
+const active = ""
 
-// localStorage.setItem(active, "active")
-// console.log(localStorage.setItem("accordeon", "active"));
+localStorage.setItem(active, "active")
 
-// function activeOrNot() {
-//     if (productCar.classList.toggle("active"))
-//     localStorage.setItem(active, "active")
-//         else (productCar.classList.toggle(""))
-//         localStorage.setItem(active, "none")
-// }
+function activeOrNot() {
+    if (productCar.classList.toggle("active"))
+    localStorage.setItem(active, "active")
+        else (productCar.classList.toggle(""))
+        localStorage.setItem(active, "none")
+}
+
+
+
 
 //The finalTest//tomuchtodoandnotime
