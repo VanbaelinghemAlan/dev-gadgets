@@ -195,9 +195,7 @@ body {
     top: 0;
 }
 
-.product-advantages:active{
-    display:none
-}
+
 .product-car {
     display: grid;
     grid-template-columns: 140px 1fr;
@@ -208,8 +206,8 @@ body {
     font-weight: bold;
 }
 
-.product-car:active {
-    display:none;
+.active {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {

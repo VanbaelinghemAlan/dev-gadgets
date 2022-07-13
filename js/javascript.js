@@ -9,7 +9,7 @@ addCart.addEventListener("click", function(event){
     if (cartNb.innerHTML >= 100)
     cartNb.innerHTML = "99+"
     addCart.innerHTML = "Déjà au panier"
-    document.getElementById("add-cta").removeEventListener("click",addCart);
+    document.getElementById("add-cta").removeEventListener("click",event);
 });
 
 //DUCK MAIN
@@ -26,7 +26,7 @@ let i = 0;
 
 nextBtn.addEventListener("click", function (event) {
     img[i++];
-    if (img[i] === undefined)
+    if (img[i] === undefined) 
     i = 0
     console.log(img[i]);
     imgMain.setAttribute("src",img[i])
@@ -35,10 +35,10 @@ console.log(img[i++]);
 
 prevBtn.addEventListener("click", function (event) {
     img[i--];
-    if (img[i] === undefined)
+    if (img[i] === undefined ||img[-1])
     i = 5
     console.log(img[i]);
-    imgMain.setAttribute("src",img[i]) //petit soucis, arrivé au niveau 0
+    imgMain.setAttribute("src",img[i]) //petit soucis, arrivé au niveau 0, plein d'essai, mais ça veut pas
 })
 
 //biggerImagePartFail
@@ -65,8 +65,8 @@ document.getElementById("accordeon2").addEventListener("click", function (){
     productCar.classList.toggle("active")
 })
 
-//TryingLocalStorageButIDontHaveTime
-// const prodActive = "productAd.classList.toggle("'active'")"
+
+//TryingLocalStorage
 
 // const active = ""
 
@@ -80,9 +80,4 @@ document.getElementById("accordeon2").addEventListener("click", function (){
 //         localStorage.setItem(active, "none")
 // }
 
-//The finalTest
-
-img/canard-geek.png
-img/canard-dragon.png
-img/canard-licorne.png
-img/canard-bowie.png
+//The finalTest//tomuchtodoandnotime
