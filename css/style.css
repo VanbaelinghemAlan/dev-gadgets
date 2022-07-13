@@ -208,7 +208,7 @@ body {
     font-weight: bold;
 }
 
-.active {
+.product-car:active {
     display:none;
 }
 
@@ -346,7 +346,7 @@ body {
 }
 .similar-lst {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: repeat(4, 1fr);
 }
 .similar-lnk {
     position: relative;
@@ -387,9 +387,6 @@ body {
 @media screen and (min-width: 768px) {
     .similar-lnk:hover {
         background-color: #dddddd;
-    }
-    .similar-lst {
-        grid-template-columns: repeat(1, 1fr);
     }
 }
 

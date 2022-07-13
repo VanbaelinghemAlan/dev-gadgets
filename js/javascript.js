@@ -82,3 +82,7 @@ document.getElementById("accordeon2").addEventListener("click", function (){
 
 //The finalTest
 
+img/canard-geek.png
+img/canard-dragon.png
+img/canard-licorne.png
+img/canard-bowie.png
