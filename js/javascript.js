@@ -79,3 +79,16 @@ document.getElementById("accordeon").addEventListener("click", function (){
 document.getElementById("accordeon2").addEventListener("click", function (){
     productCar.classList.toggle("active")
 })
+// const prodActive = "productAd.classList.toggle("'active'")"
+
+// const active = ""
+
+// localStorage.setItem(active, "active")
+// console.log(localStorage.setItem("accordeon", "active"));
+
+// function activeOrNot() {
+//     if (productCar.classList.toggle("active"))
+//     localStorage.setItem(active, "active")
+//         else (productCar.classList.toggle(""))
+//         localStorage.setItem(active, "none")
+// }
